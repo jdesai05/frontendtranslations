@@ -1,0 +1,212 @@
+.translation-service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Flex container for translation and certification options */
+.options-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+}
+
+.translation-option,
+.certification-option {
+  flex: 1;
+  min-width: 250px; /* Ensure each option takes up minimum space */
+  max-width: 300px; /* Limit maximum width for a neat layout */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.translation-option:hover,
+.certification-option:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.translation-option.selected,
+.certification-option.selected {
+  background-color: #e6f3ff;
+  border-color: #3498db;
+}
+
+.translation-option h3,
+.certification-option h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.translation-option ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.translation-option li {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.recommended {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+
+.checkbox-container {
+  display: inline-flex; /* Align checkboxes in the same line */
+  align-items: center;
+  margin-top: 12px;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.checkbox-container input {
+  margin-right: 10px; /* Adds space between checkbox and label text */
+  transform: scale(1.2); /* Increases the checkbox size */
+}
+
+.checkbox-container input:checked {
+  background-color: #3498db; /* Checked checkbox color */
+}
+
+.checkbox-container input:hover {
+  background-color: #2980b9; /* Hover effect for checkbox */
+}
+
+.checkbox-container label:hover {
+  color: #2980b9; /* Hover effect for label */
+}
+
+
+
+.radio-container {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .options-container {
+      flex-direction: column;
+  }
+
+  .translation-option,
+  .certification-option {
+      width: 100%; /* Make each option take full width on smaller screens */
+  }
+}
+
+.quote-summary {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 30px; /* Ensures it's placed below everything */
+  width: 100%;
+}
+
+.quote-summary h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.summary-value {
+  font-size: 1rem;
+  color: #000;
+  text-align: right;
+}
+
+.num-pages,
+.priority-select {
+  font-size: 1rem;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+
+.total-price .summary-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d9534f;
+}
+.address-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.address-row {
+  display: flex;
+  gap: 10px;
+}
+
+.half-width {
+  width: 48%;
+}

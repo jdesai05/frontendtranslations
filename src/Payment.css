@@ -1,0 +1,332 @@
+.payment-form {
+  max-width: 600px; /* Increased width */
+  margin: 30px auto; /* Reduced margin for less height */
+  padding: 20px; /* Reduced padding */
+  background-color: #f8f9fa;
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+  color: #333;
+  font-size: 20px; /* Reduced font size */
+}
+
+label {
+  font-size: 12px; /* Further reduced font size */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.required {
+  color: red;
+}
+
+.payment-input {
+  width: 100%;
+  padding: 8px; /* Further reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 12px; /* Further reduced font size */
+  outline: none;
+  margin-bottom: 10px; /* Reduced margin between inputs */
+}
+
+.payment-row {
+  display: flex;
+  gap: 20px; /* Increased horizontal gap between inputs */
+}
+
+.half-width {
+  flex: 1;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 8px; /* Further reduced padding */
+}
+
+.flag {
+  padding: 8px;
+  background: #f1f1f1;
+  font-size: 14px; /* Reduced font size */
+}
+
+.phone-number {
+  border: none;
+  width: 100%;
+  padding: 8px; /* Further reduced padding */
+  font-size: 12px; /* Further reduced font size */
+}
+
+.card-section {
+  margin-top: 12px; /* Reduced spacing */
+  padding: 10px; /* Further reduced padding */
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures the input and icon are aligned */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 8px; /* Reduced padding */
+}
+
+.card-icon {
+  padding: 8px; /* Reduced padding */
+  font-size: 14px; /* Further reduced font size */
+  background: #f1f1f1;
+  display: flex;
+  align-items: center; /* Vertically centers the icon */
+}
+
+.card-row {
+  display: flex;
+  gap: 20px; /* Increased horizontal gap between fields */
+  margin-top: 10px; /* Reduced space above */
+}
+
+.third-width {
+  flex: 1;
+}
+
+.cvc-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures the input and icon are aligned */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 8px; /* Further reduced padding */
+}
+
+.cvc-icon {
+  padding: 8px;
+  font-size: 14px; /* Reduced font size */
+  background: #f1f1f1;
+  display: flex;
+  align-items: center; /* Vertically centers the icon */
+}
+
+select.payment-input {
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.payment-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Reduced space above buttons */
+}
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 12px; /* Further reduced font size */
+  font-weight: bold;
+}
+
+.pay-button {
+  background: #ffc107;
+  border: none;
+  padding: 8px 12px; /* Further reduced padding */
+  border-radius: 6px;
+  color: black;
+  font-size: 12px; /* Further reduced font size */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pay-button:hover {
+  background: #e0a800;
+}
+
+.powered-by {
+  text-align: center;
+  font-size: 10px; /* Further reduced font size */
+  color: gray;
+  margin-top: 10px; /* Reduced space above */.payment-form {
+    max-width: 600px; /* Increased width */
+    margin: 30px auto; /* Reduced margin for less height */
+    padding: 20px; /* Reduced padding */
+    background-color: #f8f9fa;
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+    color: #333;
+    font-size: 20px; /* Reduced font size */
+  }
+  
+  label {
+    font-size: 12px; /* Further reduced font size */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .payment-input {
+    width: 100%;
+    padding: 8px; /* Further reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 12px; /* Further reduced font size */
+    outline: none;
+    margin-bottom: 10px; /* Reduced margin between inputs */
+  }
+  
+  .payment-row {
+    display: flex;
+    gap: 20px; /* Increased horizontal gap between inputs */
+  }
+  
+  .half-width {
+    flex: 1;
+  }
+  
+  .phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    padding: 8px; /* Further reduced padding */
+  }
+  
+  .flag {
+    padding: 8px;
+    background: #f1f1f1;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .phone-number {
+    border: none;
+    width: 100%;
+    padding: 8px; /* Further reduced padding */
+    font-size: 12px; /* Further reduced font size */
+  }
+  
+  .card-section {
+    margin-top: 12px; /* Reduced spacing */
+    padding: 10px; /* Further reduced padding */
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .card-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the input and icon are aligned */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    padding: 8px; /* Reduced padding */
+  }
+  
+  .card-icon {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Further reduced font size */
+    background: #f1f1f1;
+    display: flex;
+    align-items: center; /* Vertically centers the icon */
+  }
+  
+  .card-row {
+    display: flex;
+    gap: 20px; /* Increased horizontal gap between fields */
+    margin-top: 10px; /* Reduced space above */
+  }
+  
+  .third-width {
+    flex: 1;
+  }
+  
+  .cvc-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the input and icon are aligned */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    padding: 8px; /* Further reduced padding */
+  }
+  
+  .cvc-icon {
+    padding: 8px;
+    font-size: 14px; /* Reduced font size */
+    background: #f1f1f1;
+    display: flex;
+    align-items: center; /* Vertically centers the icon */
+  }
+  
+  select.payment-input {
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .payment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Reduced space above buttons */
+  }
+  
+  .back-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 12px; /* Further reduced font size */
+    font-weight: bold;
+  }
+  
+  .pay-button {
+    background: #ffc107;
+    border: none;
+    padding: 8px 12px; /* Further reduced padding */
+    border-radius: 6px;
+    color: black;
+    font-size: 12px; /* Further reduced font size */
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .pay-button:hover {
+    background: #e0a800;
+  }
+  
+  .powered-by {
+    text-align: center;
+    font-size: 10px; /* Further reduced font size */
+    color: gray;
+    margin-top: 10px; /* Reduced space above */
+  }
+  
+}
