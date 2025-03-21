@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
-import ChooseService from "./ChooseService";
+import TranslationCheckout from "./ChooseService";
 import SelectOptions from "./SelectOptions";
 import Payment from "./Payment";
 import "./App.css";
@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<ChooseService services={services} />} />
+          <Route path="/" element={<TranslationCheckout services={services} />} />
           <Route path="/select-options" element={<SelectOptions />} />
           <Route path="/payment" element={<Payment />} />
         </Routes>
