@@ -5,7 +5,7 @@ import { Upload, Phone, HelpCircle } from "lucide-react"
 import "./TranslationCheckout.css"
 
 export default function TranslationCheckout() {
-  const API_BASE_URL = "http://127.0.0.1:10000"
+  const API_BASE_URL = "https://quotations-a93u.onrender.com/"
 
   // Initializing State with Local Storage
   const [service, setService] = useState(() => localStorage.getItem("service") || "Professional")
