@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react"
 import { Upload, Phone, HelpCircle } from "lucide-react"
 import "./TranslationCheckout.css"
-import { loadStripe } from '@stripe/stripe-js';
-
 
 export default function TranslationCheckout() {
   const API_BASE_URL = "https://quotations-a93u.onrender.com/"
@@ -164,54 +162,27 @@ export default function TranslationCheckout() {
     setCertificationType("");
   };
 
-const handleSubmit = async () => {
-  if (!fromLanguage || !toLanguage || !certificationType) {
-    setError("Please fill in all required fields.");
-    return;
-  }
-
-  if (totalPrice <= 0) {
-    setError("Unable to calculate price. Please check your selections.");
-    return;
-  }
-
-  try {
-    setLoading(true);
-
-    const response = await fetch("https://quotations-a93u.onrender.com/create-checkout-session", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        amount: Math.round(totalPrice * 100),
-        email,
-        fromLanguage,
-        toLanguage,
-        certificationType,
-        priority,
-        pages, // convert to cents/pence
-      })
-    });
-
-    const data = await response.json();
-    console.log("Stripe Session ID:", data.id);
-
-    const stripe = await loadStripe("pk_test_51RA1lUSJR69pekxjT995MVMtICI2AlKRGUO8TVJS8W1di4fBW7MxfhlO2653lviB8obTcPtNZGXJtho1nlwMVx0h00nntme8TY"); // your publishable key
-
-    const result = await stripe.redirectToCheckout({
-      sessionId: data.id
-    });
-
-    if (result.error) {
-      alert(result.error.message);
+  // Handle form submission
+  const handleSubmit = () => {
+    if (!fromLanguage || !toLanguage || !certificationType) {
+      setError("Please fill in all required fields.");
+      return;
     }
-  } catch (error) {
-    console.error("Error creating Stripe Checkout session:", error);
-    setError("Something went wrong while initiating payment.");
-  } finally {
-    setLoading(false);
-  }
-};
-
+    
+    if (totalPrice <= 0) {
+      setError("Unable to calculate price. Please check your selections.");
+      return;
+    }
+    
+    // This would be replaced with your navigation logic
+    alert("Proceeding to payment with the following details: " + 
+          `\nService: ${service}` + 
+          `\nLanguages: ${fromLanguage} → ${toLanguage}` + 
+          `\nPriority: ${priority}` + 
+          `\nCertification: ${certificationType}` + 
+          `\nPages: ${pages}` + 
+          `\nTotal Price: $${totalPrice.toFixed(2)}`);
+  };
 
   return (
     <div className="container">
